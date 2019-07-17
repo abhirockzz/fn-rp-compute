@@ -20,7 +20,7 @@ Add a dynamic group (e.g. `functions-dynamic-group`) with below rule to allow AL
 
 ### IAM Policy
 
-Add a policy (name `functions-list-instances-policy`) to allow listing instances in the specified compartment
+Add a policy (e.g. `functions-list-instances-policy`) to allow listing instances in the specified compartment
 
         allow dynamic-group <DYNAMIC_GROUP_NAME> to inspect instances in compartment <COMPARTMENT_NAME>
         
@@ -52,9 +52,9 @@ Clone the Git repo and change to the correct directory
 Create an application using the console or CLI.
 
 	fn create app fn-rp-compute-app --annotation oracle.com/oci/subnetIds='SUBNET_OCIDs
-e.g.
-
-    fn create app fn-rp-compute-app --annotation oracle.com/oci/subnetIds='["ocid1.subnet.oc1.phx.aaaaaaaaghmsma7mpqhqdhbgnby25u2zo4wqlrrcskvu7jg56dryxtfoobar"]' 
+        
+        //example
+        fn create app fn-rp-compute-app --annotation oracle.com/oci/subnetIds='["ocid1.subnet.oc1.phx.aaaaaaaaghmsma7mpqhqdhbgnby25u2zo4wqlrrcskvu7jg56dryxtfoobar"]' 
 
 Deploy the application
 
