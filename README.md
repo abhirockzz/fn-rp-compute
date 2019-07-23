@@ -63,10 +63,10 @@ Add a dynamic group (e.g. `functions-dynamic-group`) with a rule to allow the fu
 
 Add a policy (e.g. `functions-list-instances-policy`) to allow listing instances in the specified compartment
 
-        allow dynamic-group <DYNAMIC_GROUP_NAME> to inspect instances in compartment <COMPARTMENT_NAME>
+        allow dynamic-group <DYNAMIC_GROUP_NAME> to read instances in compartment <COMPARTMENT_NAME>
         
         //example
-        allow dynamic-group functions-dynamic-group to inspect instances in compartment mycompartment
+        allow dynamic-group functions-dynamic-group to read instances in compartment mycompartment
 
 
 ## Test
